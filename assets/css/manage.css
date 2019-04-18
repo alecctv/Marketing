@@ -1,0 +1,873 @@
+
+article .entry-thumb {
+    position: relative;
+    overflow: hidden
+}
+
+article .entry-thumb img {
+    display: block;
+    width: 100%;
+    height: auto
+}
+
+article .entry-thumb>a {
+    display: block;
+    max-height: 100%
+}
+
+article .entry-thumb>a.category,
+article .entry-thumb>a[rel="category tag"],
+article .entry-thumb>a[rel=tag] {
+    display: inline-block;
+    min-width: 50px;
+    padding: 0 10px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 2;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .6);
+    border-radius: 2px;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center
+}
+
+article .entry-thumb>a.category:hover,
+article .entry-thumb>a[rel="category tag"]:hover,
+article .entry-thumb>a[rel=tag]:hover {
+    background: rgba(0, 0, 0, .8)
+}
+
+article .entry-thumb>a.category+a,
+article .entry-thumb>a[rel="category tag"]+a,
+article .entry-thumb>a[rel=tag]+a {
+    display: none
+}
+
+article .wp-post-image {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+article>.hover-overlay>a:before {
+    content: '';
+    display: block;
+    opacity: 0;
+    width: 100%;
+    height: 150%;
+    background: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .01) 2%, rgba(0, 0, 0, .95) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, .01) 2%, rgba(0, 0, 0, .95) 100%);
+    -webkit-transition: opacity .4s ease-in-out;
+    transition: opacity .4s ease-in-out;
+    position: absolute
+}
+
+article:hover>.hover-overlay>a:before,
+body .posts-tab>.tab-content>.mg-posts>.loop-wrap>article:hover .actions {
+    opacity: 1
+}
+
+article:hover>.hover-scale .wp-post-image {
+    opacity: .6
+}
+
+.loop-rows article {
+    position: relative;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #f5f5f5;
+    margin-bottom: 25px
+}
+
+.loop-rows article:last-child {
+    border-bottom: none
+}
+
+.loop-rows article.post>.entry-thumb {
+    position: relative;
+    float: left;
+    left: 0;
+    top: 0;
+    width: 250px;
+    margin-right: 20px
+}
+
+.loop-rows article.post>.entry-detail {
+    width: 100%;
+    min-height: 170px
+}
+
+.loop-rows article.post>.entry-detail>.entry-header>h2 {
+    position: relative;
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-bottom: 5px
+}
+
+.loop-rows article.post>.entry-detail>.entry-header>h2 a {
+    color: #34495e;
+    font-weight: 400
+}
+
+.loop-rows article.post>.entry-detail>.entry-header>h2 a:hover {
+    color: #55ca56
+}
+
+.loop-rows article.post>.entry-detail>.entry-header>h2 .sticky-ico {
+    vertical-align: -2px;
+    margin-left: 5px
+}
+
+.loop-rows article.post>.entry-detail>.entry-header>.entry-meta>span {
+    margin-right: 12px
+}
+
+.loop-rows article.post>.entry-detail>.entry-header>.entry-meta>.author>a {
+    color: #34495e;
+    font-weight: 500
+}
+
+.loop-rows article.post>.entry-detail>.entry-header>.entry-meta>.author>a:hover {
+    color: #55ca56
+}
+
+.loop-rows article.post>.entry-detail>.entry-header>.entry-meta>.comments-link>a,
+.loop-rows article.post>.entry-detail>.entry-header>.entry-meta>.unstar-link>a {
+    color: #7f8c8d
+}
+
+.loop-rows article.post>.entry-detail>.entry-header>.entry-meta>.comments-link {
+    float: right;
+    margin-right: 0
+}
+
+.loop-rows article.post>.entry-detail>.entry-header>.entry-meta>.comments-link>i,
+.loop-rows article.post>.entry-detail>.entry-header>.entry-meta>.unstar-link>i {
+    margin-right: 5px
+}
+
+.loop-rows article.post>.entry-detail>.entry-header>.entry-meta>.unstar-link {
+    float: right
+}
+
+.loop-rows article.post>.entry-detail>.entry-header>.entry-meta>.unstar-link:hover a,
+.loop-rows article.post>.entry-detail>.entry-header>.entry-meta>.unstar-link:hover i {
+    color: #e74c3c
+}
+
+.loop-rows article.post>.entry-detail>.entry-excerpt {
+    color: #777;
+    margin-top: 16px;
+    word-break: break-all
+}
+
+.loop-rows article.post>.entry-detail>.entry-tags {
+    margin-top: 10px;
+    padding-left: 270px
+}
+
+.loop-rows article.post>.entry-detail>.entry-tags a {
+    padding: 4px 10px;
+    background-color: #55ca56;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 16px;
+    font-weight: 400;
+    margin: 0 5px 5px 0;
+    border-radius: 2px;
+    display: inline-block
+}
+
+.loop-rows article.post>.entry-detail>.entry-tags a:nth-child(5n) {
+    background-color: #4a4a4a
+}
+
+.loop-rows article.post>.entry-detail>.entry-tags a:nth-child(5n+1) {
+    background-color: #1ac756
+}
+
+.loop-rows article.post>.entry-detail>.entry-tags a:nth-child(5n+2) {
+    background-color: #ff5e5c
+}
+
+.loop-rows article.post>.entry-detail>.entry-tags a:nth-child(5n+3) {
+    background-color: #ffbb50
+}
+
+.loop-rows article.post>.entry-detail>.entry-tags a:nth-child(5n+4) {
+    background-color: #19b5fe
+}
+
+.loop-rows article.post>.entry-detail>.entry-tags a:hover {
+    background-color: #1b1b1b
+}
+
+.loop-rows+nav {
+    position: relative
+}
+
+.loop-rows+nav>.page-nums {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    line-height: 42px;
+    color: #34495e;
+    font-size: 2rem;
+    font-weight: 500
+}
+
+@media (max-width:767px) {
+    .loop-rows article.post>.entry-detail>.entry-tags {
+        padding-left: 0
+    }
+}
+
+@media (max-width:480px) {
+    .loop-rows article {
+        padding-bottom: 15px;
+        margin-bottom: 15px
+    }
+    .loop-rows article.post>.entry-thumb {
+        float: none;
+        width: 100%;
+        margin-right: 0
+    }
+    .loop-rows article.post>.entry-detail {
+        min-height: 50px
+    }
+    .loop-rows+nav {
+        padding-right: 0;
+        text-align: center
+    }
+    .loop-rows+nav>.pagination {
+        padding: 0;
+        margin: 10px auto;
+        overflow: hidden
+    }
+    .loop-rows+nav>.page-nums {
+        display: none
+    }
+}
+
+body.manage {
+    background-color: #f5f6f8
+}
+
+body.manage .wrapper>.main-area>.row {
+    position: relative;
+    margin: 20px auto;
+    clear: both;
+    border-radius: 5px;
+    background: #fff;
+    overflow: hidden
+}
+
+body.manage .wrapper>.main-area>.row>.col-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 180px
+}
+
+body.manage .wrapper>.main-area>.row>.col-right {
+    position: relative;
+    min-height: 500px;
+    margin-left: 200px;
+    border-left: 1px solid #f5f5f5
+}
+
+body.manage .wrapper>.main-area .nav {
+    padding: 20px 0 20px 75px;
+    border-radius: 3px
+}
+
+body.manage .wrapper>.main-area .nav>.context-title {
+    position: relative;
+    height: 40px;
+    font-size: 1.3rem;
+    line-height: 40px;
+    font-weight: 400;
+    margin-bottom: 10px
+}
+
+body.manage .wrapper>.main-area .nav>.context-title i {
+    position: absolute;
+    top: 8px;
+    left: -32px;
+    width: 24px;
+    height: 24px;
+    font-size: 2.4rem
+}
+
+body.manage .wrapper>.main-area .nav>.context-title h2 {
+    white-space: nowrap
+}
+
+body.manage .wrapper>.main-area .nav>.mg_tabs>li {
+    margin-bottom: 10px
+}
+
+body.manage .wrapper>.main-area .nav>.mg_tabs>li>a {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    padding: 5px 0;
+    color: #999
+}
+
+body.manage .wrapper>.main-area .nav>.mg_tabs>li>a.active {
+    color: #55ca56
+}
+
+body.manage .wrapper>.main-area .nav>.mg_tabs>li>a:hover {
+    color: #34495e
+}
+
+body.manage .wrapper>.main-area .mg-tab-box {
+    position: relative;
+    padding: 20px;
+    background: #fff
+}
+
+body .mg-tab-box>.tab-content>section {
+    padding: 10px 0;
+    margin-bottom: 10px
+}
+
+body .mg-tab-box>.tab-content>section>header h2 {
+    padding-bottom: 10px;
+    margin: 10px auto 20px;
+    border-bottom: 1px solid #f5f5f5;
+    font-size: 2rem
+}
+
+body .mg-tab-box>.tab-content>section>header small {
+    margin-left: 6px;
+    color: #7f8c8d;
+    font-size: 1.2rem
+}
+
+body .mg-tab-box>.tab-content>section>.info-group {
+    padding: 5px 15px;
+    margin: 10px 0
+}
+
+body .mg-tab-box>.tab-content>section>.info-group>label {
+    max-width: 130px;
+    line-height: 40px;
+    font-weight: 600;
+    white-space: nowrap
+}
+
+body .mg-tab-box>.tab-content>section>.info-group>p {
+    margin: 0;
+    line-height: 40px
+}
+
+body .mg-tab-box>.tab-content>section>.info-group>p>.help-block {
+    display: block;
+    padding: 0 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    word-break: break-all
+}
+
+body .mg-tab-box>.tab-content>section>.empty-content>p,
+body .posts-tab>.tab-content>.mg-posts>.empty-content>p {
+    margin: 40px auto 20px
+}
+
+body .mg-tab-box>.tab-content>section>.info-group>p>.form-control {
+    height: auto;
+    font-size: 1.4rem
+}
+
+body .mg-tab-box>.tab-content>section>.empty-content {
+    padding: 30px 0;
+    text-align: center;
+    font-size: 2rem
+}
+
+body .mg-tab-box>.tab-content>section>.empty-content>.tico {
+    font-size: 6rem;
+    color: #ddd
+}
+
+body .posts-tab>.tab-content>.mg-posts>.empty-content {
+    padding: 30px 0;
+    text-align: center;
+    font-size: 2rem
+}
+
+body .orders-tab>.tab-content>.mg-orders>.info-group>.orders-filter,
+body .users-tab>.tab-content>.mg-users>.info-group>.users-filter {
+    text-align: right
+}
+
+body .posts-tab>.tab-content>.mg-posts>.empty-content>.tico {
+    font-size: 6rem;
+    color: #ddd
+}
+
+body .posts-tab>.tab-content>.mg-posts>.loop-wrap {
+    padding-right: 100px
+}
+
+body .posts-tab>.tab-content>.mg-posts>.loop-wrap>article {
+    border-bottom: 1px solid #f5f5f5;
+    padding: 0 0 10px 0 !important;
+}
+
+body .posts-tab>.tab-content>.mg-posts>.loop-wrap>article>.entry-thumb {
+    width: 175px
+}
+
+body .posts-tab>.tab-content>.mg-posts>.loop-wrap>article>.entry-thumb>a img {
+    width: 175px;
+    height: 120px
+}
+
+body .posts-tab>.tab-content>.mg-posts>.loop-wrap>article>.entry-detail {
+    min-height: 120px
+}
+
+body .posts-tab>.tab-content>.mg-posts>.loop-wrap>article>.entry-detail>header>.entry-meta .tico {
+    margin-right: 5px;
+    vertical-align: -2px
+}
+
+body .posts-tab>.tab-content>.mg-posts>.loop-wrap>article>.entry-detail>.entry-excerpt {
+    margin-top: 8px
+}
+
+body .posts-tab>.tab-content>.mg-posts>.loop-wrap>article>.actions {
+    position: absolute;
+    width: 80px;
+    top: 6px;
+    right: -100px;
+    opacity: 0
+}
+
+body .posts-tab>.tab-content>.mg-posts>.loop-wrap>article>.actions>a {
+    width: 100%;
+    height: 36px;
+    line-height: 16px;
+    font-size: 1.5rem;
+    border-radius: 0
+}
+
+body .coupons-tab>.tab-content>.mg-coupon .coupon-radios>label {
+    margin: 0 10px
+}
+
+body .coupons-tab>.tab-content>.mg-coupon .coupon-radios>label input {
+    vertical-align: -2px;
+    margin-right: 5px
+}
+
+body .coupons-tab>.tab-content>.mg-coupon #add-coupon {
+    position: relative;
+    width: 100px;
+    height: 42px
+}
+
+body .coupons-tab>.tab-content>.mg-coupon #add-coupon i {
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -8px;
+    font-size: 1.6rem
+}
+
+body .members-tab>.tab-content>.mg-member .member-radios>label {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+body .members-tab>.tab-content>.mg-member .member-radios>label input {
+    vertical-align: -2px;
+    margin-right: 5px
+}
+
+body .members-tab>.tab-content>.mg-member #add-member {
+    position: relative;
+    width: 100px;
+    height: 42px
+}
+
+body .members-tab>.tab-content>.mg-member #add-member i {
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -8px;
+    font-size: 1.6rem
+}
+
+body .user-tab>.tab-content .add-cash-form,
+body .users-tab>.tab-content>.mg-users table {
+    margin-top: 30px
+}
+
+body .members-tab>.tab-content>.mg-members .view-detail {
+    color: #1abc9c
+}
+
+body .members-tab>.tab-content>.mg-members .delete-member {
+    color: #e74c3c
+}
+
+body .users-tab>.tab-content>.mg-users>.info-group {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 0
+}
+
+body .users-tab>.tab-content>.mg-users>.info-group>.users-info {
+    font-size: 1.5rem;
+    line-height: 36px
+}
+
+body .users-tab>.tab-content>.mg-users>.info-group>.users-filter>label {
+    margin-right: 10px;
+    line-height: 36px
+}
+
+body .users-tab>.tab-content>.mg-users>.info-group>.users-filter>select {
+    max-width: 120px;
+    height: 36px;
+    padding: 5px 10px;
+    font-size: 1.4rem
+}
+
+body .users-tab>.tab-content>.mg-users table .th-status,
+body .users-tab>.tab-content>.mg-users table .th-sumprice,
+body .users-tab>.tab-content>.mg-users table .th-time {
+    min-width: 80px
+}
+
+body .users-tab>.tab-content>.mg-users table .th-actions {
+    min-width: 120px
+}
+
+body .users-tab>.tab-content>.mg-users table td>.tico {
+    vertical-align: -2px;
+    margin-right: 5px
+}
+
+body .users-tab>.tab-content>.mg-users table .text-explode {
+    vertical-align: 1px
+}
+
+body .users-tab>.tab-content>.mg-users table .view-detail {
+    color: #1abc9c
+}
+
+body .users-tab>.tab-content>.mg-users table .view-home {
+    color: #2ecc71
+}
+
+body .user-tab>.tab-content>section>.info-group>.row p {
+    line-height: 32px
+}
+
+body .user-tab>.tab-content .add-cash-form #add-cash {
+    position: relative;
+    padding: 6px 15px;
+    font-size: 1.4rem;
+    line-height: 30px;
+    height: 42px;
+    min-width: 100px
+}
+
+body .user-tab>.tab-content .add-cash-form #add-cash i {
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -8px;
+    font-size: 1.6rem
+}
+
+body .user-tab>.tab-content .add-credits-form {
+    margin-top: 30px
+}
+
+body .user-tab>.tab-content .add-credits-form #add-credits {
+    position: relative;
+    padding: 6px 15px;
+    font-size: 1.4rem;
+    line-height: 30px;
+    height: 42px;
+    min-width: 100px
+}
+
+body .user-tab>.tab-content .add-credits-form #add-credits i {
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -8px;
+    font-size: 1.6rem
+}
+
+body .user-tab>.tab-content .promote-vip-form {
+    margin-top: 30px
+}
+
+body .user-tab>.tab-content .promote-vip-form>label {
+    margin-right: 5px
+}
+
+body .user-tab>.tab-content .promote-vip-form>label>input {
+    margin-right: 5px;
+    vertical-align: -1px
+}
+
+body .user-tab>.tab-content .promote-vip-form #promotevip-submit {
+    position: relative;
+    height: 42px;
+    min-width: 100px;
+    margin: 0 0 0 20px
+}
+
+body .user-tab>.tab-content .promote-vip-form #promotevip-submit i {
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -8px;
+    font-size: 1.6rem
+}
+
+body .user-tab>.tab-content .promote-vip-form>.help-block {
+    margin-top: 10px
+}
+
+body .user-tab>.tab-content>.mg-orders ul li {
+    margin-bottom: 10px
+}
+
+body .user-tab>.tab-content>.mg-orders ul li .order-time {
+    margin-right: 10px
+}
+
+body .orders-tab>.tab-content>.mg-orders>.info-group {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 0
+}
+
+body .orders-tab>.tab-content>.mg-orders>.info-group>.orders-info {
+    font-size: 1.5rem;
+    line-height: 36px
+}
+
+body .orders-tab>.tab-content>.mg-orders>.info-group>.orders-filter>label {
+    margin-right: 10px;
+    line-height: 36px
+}
+
+body .orders-tab>.tab-content>.mg-orders>.info-group>.orders-filter>select {
+    max-width: 120px;
+    height: 36px;
+    padding: 5px 10px;
+    font-size: 1.4rem
+}
+
+body .orders-tab>.tab-content>.mg-orders table {
+    margin-top: 30px
+}
+
+body .orders-tab>.tab-content>.mg-orders table .th-status,
+body .orders-tab>.tab-content>.mg-orders table .th-sumprice,
+body .orders-tab>.tab-content>.mg-orders table .th-time {
+    min-width: 80px
+}
+
+body .orders-tab>.tab-content>.mg-orders table .th-actions {
+    min-width: 120px
+}
+
+body .orders-tab>.tab-content>.mg-orders table td>.tico {
+    vertical-align: -2px;
+    margin-right: 5px
+}
+
+body .orders-tab>.tab-content>.mg-orders table .text-explode {
+    vertical-align: 1px
+}
+
+body .orders-tab>.tab-content>.mg-orders table .view-detail {
+    color: #1abc9c
+}
+
+body .orders-tab>.tab-content>.mg-orders table .delete-order {
+    color: #e74c3c
+}
+
+body .order-tab>.tab-content>.mg-order>.info-group>.row p {
+    line-height: 32px
+}
+
+body .order-tab>.tab-content>.mg-status .order-status-act {
+    position: relative;
+    height: 42px;
+    margin: 0 0 0 20px
+}
+
+body .order-tab>.tab-content>.mg-status .order-status-act i {
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -8px;
+    font-size: 1.6rem
+}
+
+body .cards-tab>.tab-content>.mg-card input {
+    width: 100px;
+    margin-right: 10px
+}
+
+body .cards-tab>.tab-content>.mg-card #generate-cards {
+    position: relative;
+    width: 100px;
+    height: 42px
+}
+
+body .cards-tab>.tab-content>.mg-card #generate-cards i {
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -8px;
+    font-size: 1.6rem
+}
+
+#genCards {
+    margin: 20px auto;
+    line-height: 1.5;
+    text-align: center;
+    display: none
+}
+
+#genCards button {
+    margin-top: 20px;
+    min-width: 100px
+}
+
+@media screen and (max-width:767px) {
+    body.manage .cards-tab .table th,
+    body.manage .coupons-tab .table th,
+    body.manage .members-tab .table th,
+    body.manage .users-tab>.tab-content>.mg-users .th-role {
+        white-space: nowrap
+    }
+    body.manage .wrapper>.main-area {
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    body.manage .wrapper>.main-area .nav {
+        padding: 0 20px 10px
+    }
+    body.manage .wrapper>.main-area .nav>.context-title i {
+        left: 0
+    }
+    body.manage .wrapper>.main-area .nav>.context-title h4 {
+        text-align: center
+    }
+    body.manage .orders-tab>.tab-content>.mg-orders>.info-group>.orders-filter,
+    body.manage .users-tab>.tab-content>.mg-users>.info-group>.users-filter {
+        text-align: left
+    }
+    body.manage .wrapper>.main-area .nav>.mg_tabs>li {
+        display: inline-block;
+        margin-bottom: 0
+    }
+    body.manage .wrapper>.main-area .nav>.mg_tabs>li>a {
+        padding: 5px
+    }
+    body.manage .wrapper>.main-area>.row {
+        margin: 10px auto
+    }
+    body.manage .input-group,
+    body.manage .orders-tab>.tab-content>.mg-orders>.info-group>.orders-info,
+    body.manage .users-tab>.tab-content>.mg-users>.info-group>.users-info {
+        margin-bottom: 10px
+    }
+    body.manage .wrapper>.main-area>.row>.col-left {
+        position: relative;
+        width: 100%
+    }
+    body.manage .wrapper>.main-area>.row>.col-right {
+        margin-left: 0
+    }
+    body.manage .wrapper>.main-area .mg-tab-box {
+        padding: 10px 20px
+    }
+    body.manage .table-wrapper {
+        overflow-x: auto;
+        width: 100%
+    }
+    body.manage .posts-tab>.tab-content>.mg-posts>.loop-wrap {
+        padding-right: 0
+    }
+    body.manage .posts-tab>.tab-content>.mg-posts>.loop-wrap>article>.entry-thumb {
+        width: 100%
+    }
+    body.manage .posts-tab>.tab-content>.mg-posts>.loop-wrap>article>.entry-thumb a img {
+        width: 100%;
+        height: auto;
+        max-height: 360px
+    }
+    body.manage .users-tab>.tab-content>.mg-users .th-role {
+        min-width: 60px
+    }
+    body.manage .users-tab>.tab-content>.mg-users .th-last,
+    body.manage .users-tab>.tab-content>.mg-users .th-time {
+        white-space: nowrap;
+        min-width: 160px
+    }
+    body.manage .members-tab .th-effect,
+    body.manage .members-tab .th-expire {
+        min-width: 150px
+    }
+    body.manage .members-tab .th-actions {
+        min-width: 80px
+    }
+    body.manage .coupons-tab .table .th-status,
+    body.manage .coupons-tab .table .th-type {
+        min-width: 60px
+    }
+    body.manage .coupons-tab .table .th-effect,
+    body.manage .coupons-tab .table .th-expire {
+        min-width: 150px
+    }
+    body.manage .cards-tab .table .th-status,
+    body.manage .cards-tab .table .th-type,
+    body.manage .coupons-tab .table .th-actions {
+        min-width: 60px
+    }
+    body.manage .cards-tab .table .th-effect {
+        min-width: 150px
+    }
+    body.manage .cards-tab .table .th-actions {
+        min-width: 60px
+    }
+    body .mg-tab-box>.tab-content>section>.info-group {
+        padding: 5px 0
+    }
+}

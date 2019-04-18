@@ -1,0 +1,544 @@
+
+body>.wrapper>.main {
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    background-color: #fff;
+    margin: 45px auto;
+    min-height: 600px
+}
+
+body>.wrapper>.main>section {
+    padding: 0 20px;
+    margin: 20px auto
+}
+
+body>.wrapper>.main>section:first-child {
+    margin-top: 0
+}
+
+body>.wrapper>.main>.processor {
+    background-color: #f9f9f9;
+    padding: 15px 150px 26px;
+    overflow: hidden
+}
+
+body>.wrapper>.main>.processor>ol {
+    position: relative
+}
+
+body>.wrapper>.main>.processor>ol>li {
+    float: left;
+    text-align: center
+}
+
+body>.wrapper>.main>.processor>ol>li i {
+    text-align: center;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 41px;
+    text-indent: 1px;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    display: inline-block;
+    color: #fff;
+    background-image: url(../img/icon/step.png);
+    background-repeat: no-repeat;
+    background-position: 0 -100px
+}
+
+body>.wrapper>.main>.processor>ol>li.current>.step_inner>h4,
+body>.wrapper>.main>.processor>ol>li.done>.step_inner>h4 {
+    color: #44b549
+}
+
+body>.wrapper>.main>.processor>ol>li.current i {
+    background-position: 0 0
+}
+
+body>.wrapper>.main>.processor>ol>li.done i {
+    font-size: 0;
+    background-position: 0 -50px
+}
+
+body>.wrapper>.main>.processor>ol>li.done>.step_line {
+    background-color: #44b549
+}
+
+body>.wrapper>.main>.processor>ol>li.size1of2 {
+    width: 50%
+}
+
+body>.wrapper>.main>.processor>ol>li.no_extra {
+    overflow: visible;
+    vertical-align: top
+}
+
+body>.wrapper>.main>.orders>ul>li>.td-price i,
+body>.wrapper>.main>.orders>ul>li>.td-total-price i {
+    vertical-align: -2px;
+    margin-right: 5px
+}
+
+body>.wrapper>.main>.processor>ol>li.last {
+    position: absolute;
+    left: 100%;
+    top: 0
+}
+
+body>.wrapper>.main>.processor>ol>li.last>.step_line {
+    width: 0
+}
+
+body>.wrapper>.main>.processor>ol>li>.step_line {
+    height: 3px;
+    margin-bottom: -26px;
+    background-color: #c2c3c4;
+    width: 80%;
+    display: inline-block
+}
+
+body>.wrapper>.main>.processor>ol>li>.step_inner {
+    width: 105px;
+    margin-left: -54px;
+    text-align: center;
+    color: #9e9f9f
+}
+
+body>.wrapper>.main>.processor>ol>li>.step_inner h4 {
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 5px;
+    font-size: 1.4rem;
+    white-space: nowrap
+}
+
+body>.wrapper>.main>.orders>ul>.order-head {
+    padding: 0
+}
+
+body>.wrapper>.main>.orders>ul>.order-head>.th {
+    font-weight: 500
+}
+
+body>.wrapper>.main>.orders>ul>li {
+    padding: 20px 0;
+    overflow: hidden;
+    border-bottom: 1px dotted #eaeaea
+}
+
+body>.wrapper>.main>.orders>ul>li>.td-thumb img {
+    display: block;
+    width: 100px;
+    height: 100px
+}
+
+body>.wrapper>.main>.orders>ul>li>.td-name h2 {
+    font-size: 1.6rem;
+    font-weight: 500
+}
+
+body>.wrapper>.main>.orders>ul>li>.td-price {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    font-weight: 500
+}
+
+body>.wrapper>.main>.orders>ul>li>.td-quantity {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    font-weight: 400
+}
+
+body>.wrapper>.main>.orders>ul>li>.td-total-price {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #f64540
+}
+
+body>.wrapper>.main>.orders>ul>li>.td-view {
+    margin-top: 20px;
+    font-size: 1.6rem
+}
+
+body>.wrapper>.main>.orders>ul>li>.td-view a {
+    font-size: 1.2rem;
+    line-height: 24px;
+    color: #34495e
+}
+
+body>.wrapper>.main>.orders>ul>li>.td-view a:hover {
+    color: #f64540
+}
+
+body>.wrapper>.main>.orders>.order-memo {
+    position: relative;
+    padding-left: 100px;
+    overflow: hidden
+}
+
+body>.wrapper>.main>.orders>.order-memo>label {
+    position: absolute;
+    left: 0
+}
+
+body>.wrapper>.main>.orders>.order-memo>.memo-detail {
+    padding: 6px 0 10px
+}
+
+body>.wrapper>.main>.orders>.order-memo>.memo-detail textarea {
+    width: 100%;
+    border-radius: 0;
+    height: 30px;
+    overflow: hidden;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s
+}
+
+body>.wrapper>.main>.orders>.order-memo>.memo-detail textarea:focus {
+    height: 60px !important;
+    border-color: #55ca56
+}
+
+body>.wrapper>.main>.address>.address-list>li {
+    cursor: pointer
+}
+
+body>.wrapper>.main>.address>.address-list>li>.inner {
+    padding: 10px;
+    border: 2px solid #bdc3c7
+}
+
+body>.wrapper>.main>.address>.address-list>li>.inner>.addr-hd {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px dotted #eaeaea;
+    font-size: 1.6rem;
+    font-weight: 500
+}
+
+body>.wrapper>.main>.address>.address-list>li.active>.inner {
+    border-color: #1abc9c
+}
+
+body>.wrapper>.main>.address>.add-new-address {
+    display: inline-block;
+    margin: 20px;
+    cursor: pointer
+}
+
+body>.wrapper>.main>.address>.add-new-address:before {
+    content: "+ "
+}
+
+body>.wrapper>.main>.address>.address-input-group {
+    display: none
+}
+
+body>.wrapper>.main>.address>.address-input-group.active {
+    display: block
+}
+
+body>.wrapper>.main>.address>.address-input-group>.input-group {
+    margin: 10px 0
+}
+
+body>.wrapper>.main>.address>.address-input-group>.input-group>.required:after {
+    content: "*";
+    margin-left: 5px;
+    vertical-align: middle
+}
+
+body>.wrapper>.main>.pay-method>ul>li>label i {
+    display: inline-block;
+    vertical-align: -20px;
+    margin-left: 10px;
+    width: 136px;
+    height: 50px
+}
+
+body>.wrapper>.main>.pay-method>ul>li>label i.alipay-logo {
+    background: url(../img/icon/alipay-brand.png) no-repeat
+}
+
+body>.wrapper>.main>.pay-method>ul>li>label i.credit-logo {
+    background: url(../img/icon/credit-pay.png) no-repeat
+}
+
+body>.wrapper>.main>.goto-pay {
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 1px solid #eee
+}
+
+body>.wrapper>.main>.goto-pay>.pay-wrapper {
+    max-width: 320px;
+    padding: 10px;
+    clear: both
+}
+
+body>.wrapper>.main>.goto-pay>.pay-wrapper>.input-group {
+    position: relative;
+    padding-left: 100px
+}
+
+body>.wrapper>.main>.goto-pay>.pay-wrapper>.input-group button,
+body>.wrapper>.main>.goto-pay>.pay-wrapper>.input-group input {
+    border-radius: 0
+}
+
+body>.wrapper>.main>.goto-pay>.pay-wrapper>.input-group button {
+    position: relative;
+    width: 62px;
+    height: 42px
+}
+
+body>.wrapper>.main>.goto-pay>.pay-wrapper>.input-group button i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -8px
+}
+
+body>.wrapper>.main>.goto-pay>.pay-wrapper>.input-group>span:first-child {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 100px;
+    padding: 10px;
+    text-align: right;
+    font-size: 1.6rem;
+    line-height: 22px
+}
+
+body>.wrapper>.main>.goto-pay>.pay-wrapper>.option-row {
+    text-align: right;
+    margin-top: 10px
+}
+
+body>.wrapper>.main>.goto-pay>.pay-wrapper>.option-row a {
+    border-bottom: 1px dotted;
+    margin-left: 5px
+}
+
+body>.wrapper>.main>.goto-pay>.pay-wrapper>.order-realPay {
+    padding: 15px 0 0;
+    text-align: right;
+    font-size: 1.6rem
+}
+
+body>.wrapper>.main>.goto-pay>.pay-wrapper>.order-realPay>.realPay-title {
+    margin-right: 10px
+}
+
+body>.wrapper>.main>.goto-pay>.pay-wrapper>.order-realPay>i {
+    color: #f64540
+}
+
+body>.wrapper>.main>.goto-pay>.pay-wrapper>.order-realPay>i.tico-cny {
+    vertical-align: -2px
+}
+
+body>.wrapper>.main>.goto-pay>.pay-wrapper>.order-realPay>.real-price {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #f64540
+}
+
+body.payresult>.wrapper>.main>.result>.result-wrapper>.order-status,
+body.qrpay>.wrapper>.main>.payment>.payment-wrapper>.introduction {
+    font-size: 1.6rem
+}
+
+body>.wrapper>.main>.goto-pay>.btn-submit {
+    height: 42px;
+    border-radius: 0;
+    clear: both
+}
+
+body.payresult>.wrapper>.main>.result>.result-wrapper {
+    padding: 50px 20px;
+    text-align: center
+}
+
+body.payresult>.wrapper>.main>.result>.result-wrapper>h1 {
+    font-weight: 500
+}
+
+body.payresult>.wrapper>.main>.result>.result-wrapper>p {
+    padding: 10px 0
+}
+
+body.qrpay>.wrapper>.main>.payment>.payment-wrapper {
+    padding: 50px 20px;
+    text-align: center
+}
+
+body.qrpay>.wrapper>.main>.payment>.payment-wrapper>h1 {
+    font-weight: 500
+}
+
+body.qrpay>.wrapper>.main>.payment>.payment-wrapper>p {
+    padding: 10px 0
+}
+
+body.qrpay>.wrapper>.main>.payment>.payment-wrapper>.remark {
+    font-size: 1.4rem
+}
+
+body.qrpay>.wrapper>.main>.payment>.payment-wrapper>.remark strong {
+    font-size: 2rem;
+    color: #f64540
+}
+
+body.qrpay>.wrapper>.main>.payment>.payment-wrapper>.contact-qr-images,
+body.qrpay>.wrapper>.main>.payment>.payment-wrapper>.pay-qr-images {
+    text-align: center;
+    margin-bottom: 20px
+}
+
+body.qrpay>.wrapper>.main>.payment>.payment-wrapper>.actions {
+    text-align: center;
+    border-top: 1px solid #eaeaea
+}
+
+body.qrpay>.wrapper>.main>.payment>.payment-wrapper>.actions>a {
+    display: inline-block;
+    margin: 30px auto 20px
+}
+
+body.yz-qrpay #yzQrcode {
+    min-height: 150px;
+    padding: 20px 0
+}
+
+body.yz-qrpay #yzQrcode>p {
+    line-height: 50px
+}
+
+body.yz-qrpay #yzQrcode>p span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin-right: 20px;
+    top: 5px
+}
+
+body.yz-qrpay #yzQrcode>p i {
+    font-size: 20px
+}
+
+body.yz-qrpay #yzQrcode img {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto
+}
+
+body.site_util-download {
+    background: #f5f6f8
+}
+
+body.site_util-download .download-wrapper>.main-wrap>.primary {
+    background: #fff;
+    border-radius: 2px;
+    padding: 20px 30px;
+}
+body.site_util-download .download-wrapper>.main-wrap>.primary .dl-detail{
+    background-color: #fff8eb;
+    border: #eee dashed 1px;
+    border-radius: 4px;
+    padding: 20px;
+}
+body.site_util-download .download-wrapper>.main-wrap>.primary>.download>.dl-detail>p a,
+body.site_util-download .download-wrapper>.main-wrap>.primary>.download>.dl-detail>ul>li a {
+    padding: 0 5px
+}
+
+body.site_util-download .download-wrapper>.main-wrap>.primary>.download>.dl-declaration>p {
+    margin-bottom: 0
+}
+
+body.site_util-download .download-wrapper>.main-wrap>.primary>.download>.dl-detail>h2 {
+    font-size: 2.5rem
+}
+
+body.site_util-download .download-wrapper>.main-wrap>.primary>.download>.dl-detail>ul {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    line-height: 2
+}
+
+body.site_util-download .download-wrapper>.main-wrap>.primary>.download>.dl-detail>ul>li i {
+    margin-right: 5px;
+    vertical-align: -2px
+}
+
+body.site_util-download .download-wrapper>.main-wrap>.primary>.download>.dl-detail>p {
+    font-size: 1.6rem
+}
+
+body.site_util-download .download-wrapper>.main-wrap>.primary>.download>.tt-gg {
+    margin: 10px auto
+}
+
+body.site_util-download .download-wrapper>.main-wrap>.primary>.download>.dl-help>p {
+    margin: 5px 0;
+    line-height: 1.6
+}
+
+body.site_util-privacy-policies-and-terms {
+    background: #f5f6f8
+}
+
+body.site_util-privacy-policies-and-terms #content>.main-wrap {
+    max-width: 960px;
+    min-height: 500px;
+    margin: 20px auto;
+    border-radius: 3px;
+    background: #fff
+}
+
+body.site_util-privacy-policies-and-terms #content>.main-wrap>.main>.page>.single-header {
+    text-align: center
+}
+
+body.site_util-privacy-policies-and-terms #content>.main-wrap>.main>.page>.single-header h1 {
+    margin-top: 50px
+}
+
+body.site_util-privacy-policies-and-terms #content>.main-wrap>.main>.page>.single-body {
+    padding: 20px 30px;
+    font-size: 1.6rem;
+    line-height: 1.5
+}
+
+body.site_util-privacy-policies-and-terms #content>.main-wrap>.main>.page>.single-body h2 {
+    margin: 30px 0 15px;
+    font-size: 2.4rem
+}
+
+body.site_util-privacy-policies-and-terms #content>.main-wrap>.main>.page>.single-body ul {
+    padding-left: 20px
+}
+
+body.site_util-privacy-policies-and-terms #content>.main-wrap>.main>.page>.single-body ul li {
+    line-height: 1.8;
+    opacity: .9
+}
+
+body.site_util-privacy-policies-and-terms #content>.main-wrap>.main>.page>.single-body ul li:before {
+    font-family: Tico !important;
+    content: "\e628";
+    font-size: 10px;
+    padding: 0 6px 0 10px
+}

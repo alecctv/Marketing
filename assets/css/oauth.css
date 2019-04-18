@@ -1,0 +1,73 @@
+/**
+ * Copyright (c) 2014-2018, yunsheji.cc
+ * All right reserved.
+ *
+ * @since 1.1.0
+ * @package Marketing
+ * @date 2018/02/14 10:00
+ * @link https://yunsheji.cc
+ */
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 72px 0 61px
+}
+
+body>header {
+    position: absolute;
+    top: 0
+}
+
+body>.wrapper {
+    position: relative;
+    height: 100%;
+    overflow: hidden
+}
+
+body>.wrapper>.main {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    width: 320px;
+    height: auto;
+    margin-top: -180px;
+    margin-left: -160px;
+    text-align: center
+}
+
+body>.wrapper>.main .form-account label {
+    display: none
+}
+
+body>.wrapper>.main .form-account input {
+    margin: 10px auto
+}
+
+body>.wrapper>.main .form-account #bind-account {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    margin-top: 10px
+}
+
+body>.wrapper>.main .form-account #bind-account i {
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -8px;
+    font-size: 1.6rem
+}
+
+#header-nav .logo{
+ text-align:center;
+ display:  block;
+ position:  relative;
+}
+#header-nav .logo img{
+    height:60px;
+    width:60px;
+}

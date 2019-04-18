@@ -1,0 +1,501 @@
+#header-nav {
+    display: block;
+    position: relative;
+    background:#fff;
+    text-align:center;
+    margin-top: 10px;
+}
+#header-nav .logo{
+ text-align:center;
+ display:  block;
+ position:  relative;
+}
+#header-nav .logo img{
+    height:60px;
+    width:60px;
+}
+.form-findpass{
+    display:  block;
+    margin: 0 auto;
+}
+.action-page>#bg-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/super-hero.jpg) top/cover no-repeat fixed;
+}
+
+.action-page>#bg-layer:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: #323232;
+    opacity: .6;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.action-page> .top-go-home{
+    z-index: 9999;
+    position: absolute;
+    color: #aaa !important;
+    font-size: 15px;
+    left: 30px;
+    top: 30px;
+    padding:  8px 10px;
+    border-radius: 4px;
+}
+
+.signup .top-go-home{
+    z-index: 9999;
+    position: absolute;
+    color: #323232 !important;
+    font-size: 15px;
+    left: 30px;
+    top: 20px;
+    padding:  8px 10px;
+    border-radius: 4px;
+}
+
+.signup .top-go-home:hover{
+    color: #e26565 !important;
+}
+
+
+
+.action-page> .top-go-home:hover{
+    color: #fff;
+}
+
+.action-page.signin {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 61px;
+    background: url(../img/login-bg2.jpg) top/cover no-repeat fixed;
+    color: #fff;
+    background: #1170bb;
+}
+
+.action-page.signin a {
+    color: #fff;
+}
+
+.action-page.signin a:before {
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.action-page.signin>header {
+    display: none
+}
+
+.action-page.signin>.wrapper {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.action-page.signin>.wrapper>.main {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    width: 320px;
+    height: 360px;
+    margin-top: -180px;
+    margin-left: -160px;
+    text-align: center;
+}
+
+.action-page.signin>.wrapper>.main>.form-signin>.local-signin>.input-container {
+    position: relative;
+    margin: 20px 0 30px
+}
+
+.action-page.signin>.wrapper>.main>.form-signin>.local-signin>.input-container>input {
+    display: block;
+    float: left;
+    width: 100%;
+    padding-bottom: 6px;
+    padding-left: 11px;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    margin-top: 0;
+    border-radius: 4px;
+    outline: 0;
+    transition: border-bottom .3s, border-color .3s, border-width .3s, border .3s ease-in-out;
+    font-size: 1.6rem;
+    line-height: 28px;
+    color: rgba(255, 255, 255, .8);
+    background: 0 0;
+}
+
+.action-page.signin>.wrapper>.main>.form-signin>.local-signin>.input-container>.indicator {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 10px;
+    right: 5px;
+    font-size: 16px;
+    line-height: 16px;
+    opacity: 0
+}
+
+.action-page.signin>.wrapper>.main>.form-signin>.local-signin>.input-container>.error-tip {
+    position: initial;
+    width: 100%;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+.action-page.signin>.wrapper>.main>.form-signin>.open-login>p {
+    line-height: 25px
+}
+
+.action-page.signin>.wrapper>.main>.form-signin>.open-login>a {
+    color: #fff;
+}
+
+.action-page.signin>.wrapper>.main>.form-signin>.login-help {
+    position: relative
+}
+
+.action-page.signin>.wrapper>.main>.form-signin>.login-help>a {
+    color: rgba(255, 255, 255, .8)
+}
+
+.action-page.signin>.wrapper>.main>.form-signin>.login-help>span {
+    display: inline-block;
+    position: relative;
+    top: -4px;
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, .6)
+}
+
+.action-page.signin>.wrapper>.main>.form-signin.submitting .indicator {
+    opacity: 1 !important
+}
+
+.action-page.signin>.wrapper>.main>.form-signin #signin-btn {
+    margin-bottom: 10px;
+    width: auto;
+    background-color: #3895D6;
+    border-radius: 4px;
+    padding: 8px 20px;
+}
+
+.action-page.signin>footer,.action-page.signup>footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 30px;
+    z-index: 999;
+}
+
+.action-page.signin>footer>.foot-menu>a {
+    text-decoration: none
+}
+
+.action-page.signin>footer>.foot-menu>.sep {
+    display: inline-block;
+    height: 12px;
+    vertical-align: middle;
+    margin: 0 10px 2px;
+    border-right: 1px solid
+}
+
+.action-page.signin>.wrapper>.main>.logo,
+.action-page.signup>.wrapper>.main>.logo {
+    max-width: 80px;
+    height: auto;
+    margin: 30px auto 50px;
+}
+
+.action-page.activate,
+.action-page.findpass,
+.action-page.resetpass,
+.action-page.signup {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.action-page.activate a,
+.action-page.findpass a,
+.action-page.resetpass a,
+.action-page.signup a {
+    color: #55ca56
+}
+
+.action-page.activate a:before,
+.action-page.findpass a:before,
+.action-page.resetpass a:before,
+.action-page.signup a:before {
+    background-color: #55ca56
+}
+
+.action-page.activate>header,
+.action-page.findpass>header,
+.action-page.resetpass>header,
+.action-page.signup>header {
+    position: absolute;
+    top: 0;
+    right:  0;
+    width:  100%;
+    background: #fff;
+}
+
+.action-page.activate>.wrapper,
+.action-page.findpass>.wrapper,
+.action-page.resetpass>.wrapper,
+.action-page.signup>.wrapper {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.action-page.activate .wrapper>.main,
+.action-page.findpass .wrapper>.main,
+.action-page.resetpass .wrapper>.main,
+.action-page.signup .wrapper>.main {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    width: 320px;
+    height: auto;
+    margin-top: -180px;
+    margin-left: -160px;
+    text-align: center;
+}
+
+.action-page.signup {
+    color: #fff;
+    background: #1170bb;
+}
+
+.action-page.signup a {
+    color: #fff
+}
+
+.action-page.signup a:before {
+    background-color: rgba(255, 255, 255, .8)
+}
+
+.action-page.signup>header {
+}
+
+.action-page.signup>.wrapper>.main {
+    top: 50%;
+    margin-top: -280px;
+}
+
+.action-page.signup>.wrapper>.main>.form-signup>.local-signup>.input-container {
+    position: relative;
+    margin: 10px 0
+}
+
+.action-page.signup>.wrapper>.main>.form-signup>.local-signup>.input-container>input {
+    display: block;
+    width: 100%;
+    outline: 0;
+    font-size: 1.6rem;
+    line-height: 28px
+}
+
+.action-page.signup>.wrapper>.main>.form-signup>.local-signup>.input-container>.pull-left {
+    position: relative;
+    width: 200px
+}
+
+.action-page.signup>.wrapper>.main>.form-signup>.local-signup>.input-container>.pull-left.captcha-wrap {
+    width: 100px;
+    margin-left: 15px
+}
+
+.action-page.signup>.wrapper>.main>.form-signup>.local-signup>.input-container>.pull-left.captcha-wrap>img {
+    width: 100%;
+    height: 42px;
+    border-radius: 6px
+}
+
+.action-page.signup>.wrapper>.main>.form-signup>.local-signup>.input-container>.pull-left>.status-icon {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top
+}
+
+.action-page.signup>.wrapper>.main>.form-signup>.local-signup>.input-container>.pull-left>.captcha:hover {
+    cursor: pointer
+}
+
+.action-page.signup>.wrapper>.main>.form-signup>.local-signup>#signup-btn {
+    position: relative;
+    width: 100%;
+    height: 42px;
+    letter-spacing: 5px
+}
+
+.action-page.signup>.wrapper>.main>.form-signup>.local-signup>#signup-btn>.indicator {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 13px;
+    left: 50%;
+    margin-left: -10px;
+    font-size: 2rem
+}
+
+.action-page.signup>.wrapper>.main>.form-signup>.open-login>p {
+    line-height: 25px;
+}
+
+.action-page.signup>.wrapper>.main>.form-signup>.open-login>a {
+    padding: 10px;
+}
+
+.action-page.signup>.wrapper>.main>.form-signup>.open-login>.btn-sn-qq {
+    color: #ffffff;
+}
+
+.action-page.signup>.wrapper>.main>.form-signup>.open-login>.btn-sn-weibo {
+    color: #ffffff;
+}
+
+.action-page.signup>.wrapper>.main>.form-signup>.open-login>.btn-sn-weixin {
+    color: #2dc100
+}
+
+.action-page.signup>.wrapper>.main>.form-signup>.note>p.terms-note {
+    font-size: 1rem
+}
+
+.action-page.signup footer.simple-footer>.foot-menu>.sep {
+    border-right-color: #fff
+}
+
+.action-page.findpass #find-pass {
+    position: relative;
+    width: 72px;
+    height: 42px
+}
+
+.action-page.findpass #find-pass i {
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -8px;
+    font-size: 1.6rem
+}
+
+.action-page.resetpass .main {
+    max-width: 320px;
+    margin: 0 auto
+}
+
+.action-page.resetpass .main .form-resetpass label {
+    display: none
+}
+
+.action-page.resetpass .main .form-resetpass input {
+    margin: 10px 0
+}
+
+.action-page.resetpass .main .form-resetpass #reset-pass {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    margin: 20px auto
+}
+
+.action-page.resetpass .main .form-resetpass #reset-pass i {
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -8px;
+    font-size: 1.6rem
+}
+
+@media (max-width:767px) {
+    .action-page.signin,
+    .action-page.signup {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        height: auto
+    }
+    .action-page.signin>footer,
+    .action-page.signin>header,
+    .action-page.signup>footer,
+    .action-page.signup>header {
+        position: relative;
+        z-index: 999;
+    }
+    .action-page.signin>.wrapper>.main,
+    .action-page.signup>.wrapper>.main {
+        top: 0;
+        margin-top: 0
+    }
+    .action-page.signin>.wrapper>.main>.logo,
+    .action-page.signup>.wrapper>.main>.logo {
+        max-width: 120px;
+        height: auto;
+        margin: 20px auto
+    }
+}
+
+.msg {
+    display: none;
+    margin-bottom: 10px;
+    border: 1px solid;
+    border-radius: 4px;
+    position: relative;
+    padding: 8px 30px 8px 15px;
+    font-size: 1.3rem
+}
+
+.msg.danger {
+    display: block;
+    background-color: #e26565;
+    border: none;
+    color: #ffffff;
+    border-bottom: #ffffff solid 1px;
+    border-radius: 0;
+    text-align:  left;
+}
+
+.msg.success {
+    display: block;
+    background-color: #f0f7e6;
+    border-color: #dde7d2;
+    color: #76a238
+}
+
+.msg>.btn-close {
+    border: none;
+    background: 0 0;
+    position: absolute;
+    right: 2%;
+    font-size: 1.2em;
+    top: .35em;
+}
+
+#default-tip{
+    color:#fff;
+    text-align:left;
+    font-size:12px;
+}
